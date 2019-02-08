@@ -1,0 +1,21 @@
+.homepageBody {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.searchBar {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 15px;
+}
+
+.promo1text { grid-area: leftOne; }
+.promo1pic { grid-area: rightOne; }
+
+.promotionals {
+  display: grid;
+  grid-template-areas:
+    'leftOne leftOne rightOne';
+  overflow: hidden;
+  background-color: #4472c4;
+}
