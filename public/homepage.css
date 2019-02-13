@@ -4,18 +4,46 @@
     margin-top: 50px;
 }
 
+.frontPage {
+  
+}
+
 .searchBar {
     background-color: rgba(255, 255, 255, 0.6);
     padding: 15px;
 }
 
-.promo1text { grid-area: leftOne; }
-.promo1pic { grid-area: rightOne; }
+#promotext1 { grid-area: leftOne; }
+#promopic1 { grid-area: rightOne; }
+#promotext2 { grid-area: rightTwo; }
+#promopic2 { grid-area: leftTwo; }
+#promotext3 { grid-area: leftThree; }
+#promopic3 { grid-area: rightThree; }
 
 .promotionals {
   display: grid;
   grid-template-areas:
-    'leftOne leftOne rightOne';
+    'leftOne rightOne'
+    'leftTwo rightTwo'
+    'leftThree rightThree';
   overflow: hidden;
-  background-color: #4472c4;
+  margin-top: 40px;
+}
+
+.promotext {
+  background-color: rgba(68, 114, 196, 0.6);
+  color:white;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 10vh;
+  font-size: 3vh;
+  padding: 50px;
+  height:50vh;
+  width: 100%;
+}
+
+.promopic {
+  margin: auto;
+  margin-top: 29px;
+  height:50vh;
 }

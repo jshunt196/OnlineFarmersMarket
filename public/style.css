@@ -6,8 +6,8 @@ body {
     background:
         radial-gradient(circle, transparent 20%, #a2b9e2 20%, #a2b9e2 80%, transparent 80%, transparent),
         radial-gradient(circle, transparent 20%, #a2b9e2 20%, #a2b9e2 80%, transparent 80%, transparent) 50px 50px,
-        linear-gradient(#4472c4 8px, transparent 8px) 0 -4px,
-        linear-gradient(90deg, #4472c4 8px, transparent 8px) -4px 0;
+        linear-gradient(#9aafd6 8px, transparent 8px) 0 -4px,
+        linear-gradient(90deg, #9aafd6 8px, transparent 8px) -4px 0;
         background-color: #a2b9e2;
         background-size:100px 100px, 100px 100px, 50px 50px, 50px 50px;
 }
@@ -16,25 +16,30 @@ body {
 .logo { grid-area: logo; }
 .right-header { grid-area: rightSide; }
 .img1 { grid-area: i1 }
+.img2 { grid-area: i2 }
+.img3 { grid-area: i3 }
+.img4 { grid-area: i4 }
+.img5 { grid-area: i5 }
+.img6 { grid-area: i6 }
 
 .header {
   display: grid;
   grid-template-areas:
-    'leftSide logo  rightSide'
-    'i1 i1 i1';
+    'leftSide leftSide leftSide logo logo rightSide rightSide rightSide'
+    'i1 i2 i3 logo logo i4 i5 i6';
   overflow: hidden;
   background-color: #4472c4;
 }
 
 img {
-    width: 250px;
+    height: 131px;
 }
 
 .header a {
   float: left;
   color: white;
   text-align: center;
-  padding: 12px;
+  padding: 10px;
   text-decoration: none;
   font-size: 18px; 
   line-height: 25px;
@@ -47,7 +52,7 @@ img {
 
 .header a:hover {
   background-color: #213b69;
-  color: black;
+  color: white;
 }
 
 .header a.active {
@@ -78,7 +83,7 @@ img {
 }
 
 input[type=text], select {
-    width:80%;
+    width:70%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -100,4 +105,19 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background-color: #f4d733;
+}
+
+button {
+    width:10%;
+  background-color: #ffe347;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+    background-color: #f4d733;
 }
