@@ -21,27 +21,21 @@
     
     <h2>Search Page</h2>
     <div class="searchBar">
-        <form ng-click="searchBusinesses()" style="width: 60%; margin:auto; padding: 30px">
+        <form ng-submit="searchBusinesses()" style="width: 60%; margin:auto; padding: 30px">
             <div>FIND ALL OF THE LOCAL UTAH PRODUCTS YOU NEED, HERE IN OUR ONLINE COMMUNITY.</div>
             <input type="text" ng-model="searchWord">
             <input type="submit">
         </form>
     </div>
     
-    <div class="businessEntry">
-        <h3 id="name">Business Name here:</h3>
-        <h5 id="address">Address here</h5>
-        <h5 id="phone">Phone Number here</h5>
-        <h5 id="website">Website URL here</h5>
-        <h5 id="items">Items sold here: </h5>
-    </div>
+   
     
     <div class="businessEntry" ng-repeat="business in businesses">
-        <h3>Name: {{business}}</h3>
-        <h5 id="address">Address here</h5>
-        <h5 id="phone">Phone Number here</h5>
-        <h5 id="website">Website URL here</h5>
-        <h5 id="items">Items sold here: </h5>
+        <h3>Name: {{business.name}}</h3>
+        <h5 id="address">Address: {{business.adress}}</h5>
+        <h5 id="phone">Phone Number: {{business.phoneNum}}</h5>
+        <h5 id="website">Website URL: {{business.website}}</h5>
+        <h5 id="items">Items sold here: {{business.discription}} </h5>
     </div>
 </body>
 </html>

@@ -5,19 +5,30 @@ angular.module('business', [])
             $scope.businesses = [];
             $scope.businessesBank = [];
             
-            $scope.businessesBank.push('Your local bakery');
-            $scope.businessesBank.push('Your local bakery1');
-            $scope.businessesBank.push('Your local bakery2');
-            $scope.businessesBank.push('Your local bakery3');
+           
+            $scope.addbusiness=function(mname,adr,pn,ws,discip){
+                $scope.businessesBank.push($scope.makebusiness(mname,adr,pn,ws,discip));
+            }
+            $scope.makebusiness= function(mname,adr,pn,ws,discip){
+                return{name:mname,adress:adr,phoneNum:pn,website:ws,discription:discip};
+            }
+            $scope.businessesBank.push($scope.makebusiness("richard dryer","719 east first st orum","605-350-9072","lessstuff.com","copper brass sink cheese"));
+            $scope.businessesBank.push($scope.makebusiness("roys donut shoppe","799 west second ave provo","655-950-4672","coolstuff.com","foot tall icecream cones and cheese"));
+            $scope.businessesBank.push($scope.makebusiness("bobs bakery","719 west first ave provo","605-350-9672","lessstuff.com","wheat bread gluenten free gluten free bread stuff"));
+            $scope.businessesBank.push($scope.makebusiness("jacks bakery","3243,univeristy Ave, provo","801-473-4545","www.stuff.com","whole grain bread gluten free taco shells wheat bread"));
+            $scope.businessesBank.push($scope.makebusiness("carl's farm","132, 2324st provo","801-343-4343","www.morestuff.com","fresh milk plain cheese ebola"));
             
             $scope.searchBusinesses = function(product) {
+                $scope.businesses=[]
                 var search = $scope.searchWord;
                 for (var i = 0; i < $scope.businessesBank.length; i++) {
-                    if($scope.businessesBank[i].includes(search)) {
+                    if($scope.businessesBank[i].discription.includes(search)) {
                       $scope.businesses.push($scope.businessesBank[i]);
                     }
                 }
-                console.log("size: " + $scope.businesses.length);
+                //console.log("size: " + $scope.businesses.length);
             };
         }
     ]);
+
+    
