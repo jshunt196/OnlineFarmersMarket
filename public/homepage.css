@@ -1,49 +1,43 @@
-.homepageBody {
-    width: 80%;
-    margin: auto;
-    margin-top: 50px;
-}
-
-.frontPage {
-  
-}
-
 .searchBar {
-    background-color: rgba(255, 255, 255, 0.6);
-    padding: 15px;
+    background-color: rgba(68, 114, 196, 0.6);
+    font-size: 30px;
+    height: 300px;
+    color: white;
 }
 
-#promotext1 { grid-area: leftOne; }
-#promopic1 { grid-area: rightOne; }
-#promotext2 { grid-area: rightTwo; }
-#promopic2 { grid-area: leftTwo; }
-#promotext3 { grid-area: leftThree; }
-#promopic3 { grid-area: rightThree; }
-
-.promotionals {
-  display: grid;
-  grid-template-areas:
-    'leftOne rightOne'
-    'leftTwo rightTwo'
-    'leftThree rightThree';
-  overflow: hidden;
-  margin-top: 40px;
+.promo{
+  text-align: center;
+  width: 70%;
+  margin: 0px;
+  padding: 30px;
 }
 
-.promotext {
-  background-color: rgba(68, 114, 196, 0.6);
-  color:white;
+.item {
+  font-size: 30px;
+  text-align: center;
+  width: 50vh;
+  float: right;
+}
+
+.slideshow {
+  margin: auto;
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
   text-align: center;
   vertical-align: middle;
-  line-height: 10vh;
-  font-size: 3vh;
-  padding: 50px;
-  height:50vh;
-  width: 100%;
 }
 
-.promopic {
-  margin: auto;
-  margin-top: 29px;
-  height:50vh;
+.content {
+  position: absolute;
+  left: 50%;
+  top: 350px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 80px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 25px;
+  font-size: 30px;
 }

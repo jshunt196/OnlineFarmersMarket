@@ -2,56 +2,69 @@
 <html>
 <head>
 <title>Utah Online</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" type="text/css" href="homepage.css">
 </head>
 
 <body>
-    <div class="grid-container">
-</div>
-    <div class="frontPage">
     <div class="header">
-        <div class="left-header">
-            <a class="business" href="myBusiness.html">My Business</a>
-            <a class = "favoritedBus" href="favorited.html">Favorited Businesses</a>
-            <a class = "products" href="products.html">Products</a>
-        </div>
-        <img class="logo" src="LogoMakr_7KL9VL.png" style="width:200px;height:100%;" href="index.html"/>
-        <div class="right-header">
-            <a class="about" href="about.html">About Us</a>
-            <a class="search" href="search.html">Search</a>
-            <a class="logOut" href="index.html">Log Out</a>
-        </div>
-        
-        <img class="img1" src="https://images.pexels.com/photos/257292/pexels-photo-257292.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/>
-        <img class="img2" src="bluebarrybetsy.jpg"/>
-        <img class="img3" src="https://images.pexels.com/photos/533360/pexels-photo-533360.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/>
-        <img class="img4" src="https://images.pexels.com/photos/65271/berry-strawberry-hands-leaves-65271.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/>
-        <img class="img5" src="https://images.pexels.com/photos/37641/carrots-basket-vegetables-market-37641.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/>
-        <img class="img6" src="https://images.pexels.com/photos/209291/pexels-photo-209291.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/>
+            <a class="business" href="myBusiness.html">MY BUSINESS</a>
+            <a class = "favoritedBus" href="favorited.html">FAVORITE BUSINESSES</a>
+            <a class = "products" href="products.html">PRODUCTS</a>
+            <a class="about" href="about.html">ABOUT US</a>
+            <a class="search" href="search.html">SEARCH</a>
+            <a class="logOut" href="index.html">LOG OUT</a>
     </div>
     
-        <form class="searchBar" action="search.html" style="width: 80%; margin:auto; margin-top: 60px">
-            <h1>All local Utah products you need from Utah owned businesses.</h1>
-            <input type="text" name="lastname">
-            <input type="submit">
+    <div class="slideshow">
+        <div class="content">Utah's Online Farmers Market</div>
+    </div>
+
+    <div class="searchBar">
+        <form action="search.html" style="width: 80%; margin:auto; padding: 80px">
+            <div>FIND ALL OF THE LOCAL UTAH PRODUCTS YOU NEED, HERE IN OUR ONLINE COMMUNITY.</div>
+            <input type="submit" style="width: 150px" value="Search Businesses" />
         </form>
     </div>
-    <div class="homepageBody">
-        <div class="promotionals">
-            <h1 class="promotext" id="promotext1">
-                FIND ALL OF THE LOCAL PRODUCE THAT YOU NEED TO FILL YOUR PANTRY. JOIN US IN OUR ONLINE COMMUNITY.</h1>
-            <img id="promopic1" class="promopic"
-                src="https://images.pexels.com/photos/1510266/pexels-photo-1510266.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"/>
-
-            <h1 class="promotext" id="promotext2">BREAD THAT'S MADE TO BE A HEALTHY FIT FOR YOU AND YOUR FAMILY.</h1>
-            <img id="promopic2" class="promopic" src="https://images.pexels.com/photos/5802/bread-food-cooking.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"/>
-
-            <h1 class="promotext" id="promotext3">Find all of your no-GMO needs here!</h1>
-            <img id="promopic3" class="promopic" src="https://images.pexels.com/photos/1866037/pexels-photo-1866037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"/>
-        </div>  
-        <button>View Products</button>
+    <div style="background-color: #f4d733;">
+            <h2 class="promo" style="margin: auto">It is our goal to help connect you with your community.</h2>
+            <h5 class="promo" style="margin: auto">All natural</h5>
+            <h5 class="promo" style="margin: auto">Organic</h5>
+            <h5 class="promo" style="margin: auto">No GMO</h5>
     </div>
+    <div style="background-color: #001333;color:white;">
+            <h2 class="promo" style="margin: auto">A community market. Find:</h2>
+            <h5 class="promo" style="margin: auto">Produce</h5>
+            <h5 class="promo" style="margin: auto">Meat</h5>
+            <h5 class="promo" style="margin: auto">Dairy Products</h5>
+            <h5 class="promo" style="margin: auto">Honey</h5>
+            <h5 class="promo" style="margin: auto">Soaps and Lotions</h5>
+
+    </div>
+    <form action="products.html">
+        <input type="submit" value="View Products" />
+    </form>
+        <img src="LogoMakr_7KL9VL.png" style="width: 10px" href="index.html"/>
+<script>
+//Array of images which you want to show: Use path you want.
+var images=new Array('https://images.pexels.com/photos/257292/pexels-photo-257292.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+'bluebarrybetsy.jpg','https://images.pexels.com/photos/533360/pexels-photo-533360.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+'https://images.pexels.com/photos/37641/carrots-basket-vegetables-market-37641.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+'https://images.pexels.com/photos/209291/pexels-photo-209291.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+var nextimage=0;
+doSlideshow();
+
+function doSlideshow(){
+    if(nextimage>=images.length){nextimage=0;}
+    $('.slideshow')
+    .css('background-image','url("'+images[nextimage++]+'")')
+    .fadeIn(1000,function(){
+        setTimeout(doSlideshow,6000);
+    });
+}
+</script>
 </body>
 </html>

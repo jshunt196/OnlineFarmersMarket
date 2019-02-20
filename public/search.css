@@ -1,0 +1,15 @@
+.businessEntry {
+    width: 60%;
+    margin: auto;
+    background-color: rgba(68, 114, 196, 0.6);
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.searchBar {
+    background-color: rgba(68, 114, 196, 0.6);
+    font-size: 30px;
+    height: 300px;
+    color: white;
+}

@@ -2,36 +2,46 @@
 <html>
 <head>
 <title>Utah Online</title>
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="business.js"></script>
 <link rel="stylesheet" type="text/css" href="style.css">
-<link rel="stylesheet" type="text/css" href="homepage.css">
+<link rel="stylesheet" type="text/css" href="search.css">
 </head>
 
-<body>
-    <div class="grid-container">
-</div>
+<body ng-app="business" ng-controller="MainCtrl">
     <div class="frontPage">
     <div class="header">
-        <div class="left-header">
-            <a class="business" href="myBusiness.html">My Business</a>
-            <a class = "favoritedBus" href="favorited.html">Favorited Businesses</a>
-            <a class = "products" href="products.html">Products</a>
-        </div>
-        <img class="logo" src="LogoMakr_7KL9VL.png" style="width:200px;height:100%;"/>
-        <div class="right-header">
-            <a class="about" href="about.html">About Us</a>
-            <a class="search" href="search.html">Search</a>
-            <a class="logOut" href="index.html">Log Out</a>
-        </div>
-        
-        <img class="img1" src="https://images.pexels.com/photos/257292/pexels-photo-257292.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/>
-        <img class="img2" src="bluebarrybetsy.jpg"/>
-        <img class="img3" src="https://images.pexels.com/photos/533360/pexels-photo-533360.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/>
-        <img class="img4" src="https://images.pexels.com/photos/65271/berry-strawberry-hands-leaves-65271.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/>
-        <img class="img5" src="https://images.pexels.com/photos/37641/carrots-basket-vegetables-market-37641.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/>
-        <img class="img6" src="https://images.pexels.com/photos/209291/pexels-photo-209291.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/>
+            <a class="business" href="myBusiness.html">MY BUSINESS</a>
+            <a class = "favoritedBus" href="favorited.html">FAVORITE BUSINESSES</a>
+            <a class = "products" href="products.html">PRODUCTS</a>
+            <a class="about" href="about.html">ABOUT US</a>
+            <a class="search" href="search.html">SEARCH</a>
+            <a class="logOut" href="index.html">LOG OUT</a>
     </div>
     
     <h2>Search Page</h2>
+    <div class="searchBar">
+        <form ng-click="searchBusinesses()" style="width: 60%; margin:auto; padding: 30px">
+            <div>FIND ALL OF THE LOCAL UTAH PRODUCTS YOU NEED, HERE IN OUR ONLINE COMMUNITY.</div>
+            <input type="text" ng-model="searchWord">
+            <input type="submit">
+        </form>
+    </div>
+    
+    <div class="businessEntry">
+        <h3 id="name">Business Name here:</h3>
+        <h5 id="address">Address here</h5>
+        <h5 id="phone">Phone Number here</h5>
+        <h5 id="website">Website URL here</h5>
+        <h5 id="items">Items sold here: </h5>
+    </div>
+    
+    <div class="businessEntry" ng-repeat="business in businesses">
+        <h3>Name: {{business}}</h3>
+        <h5 id="address">Address here</h5>
+        <h5 id="phone">Phone Number here</h5>
+        <h5 id="website">Website URL here</h5>
+        <h5 id="items">Items sold here: </h5>
+    </div>
 </body>
 </html>
