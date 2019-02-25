@@ -22,7 +22,7 @@
 .slideshow {
   margin: auto;
   background-color: #cccccc; /* Used if the image is unavailable */
-  height: 500px; /* You must set a specified height */
+  height: 700px; /* You must set a specified height */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
@@ -33,11 +33,13 @@
 .content {
   position: absolute;
   left: 50%;
-  top: 350px;
+  top: 410px;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   padding: 80px;
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 25px;
   font-size: 30px;
+  
+  font-style: oblique;
 }
