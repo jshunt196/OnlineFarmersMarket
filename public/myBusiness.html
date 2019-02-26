@@ -2,7 +2,9 @@
 <html>
 <head>
 <title>Comments!</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src=business.js></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" type="text/css" href="business.css">
@@ -12,7 +14,7 @@
     <div class="grid-container">
 </div>
     <div class="header">
-        <a style="text-align:right display:inline;color:#ffe347">Utah's Online Farmer's Market</a>
+        <a class= logo href="index.html" style="text-align:right display:inline;color:#ffe347">Utah's Online Farmer's Market</a>
         <div style="float: right;">
             <a class="business" href="myBusiness.html">MY BUSINESS</a>
             <a class = "favoritedBus" href="favorited.html">FAVORITE BUSINESSES</a>
@@ -27,7 +29,7 @@
         <h2>Your Business Information</h2>
         
         <div class="container">
-          <form>
+          <form ng-submit=add()>
           <div class="row">
             <div class="col-25">
               <label for="fname">Business Name:</label>
@@ -71,8 +73,9 @@
             </div>
           </div>
           <div class="row">
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" onsubmit= "localStorage.setItem('bta',{nbtaame:'bobbbbbs',adress:'adr',phoneNum:'pn',website:'ws',discription:'discip'})" >
           </div>
+
           </form>
         </div>
     </div>
